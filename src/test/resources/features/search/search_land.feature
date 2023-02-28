@@ -1,4 +1,4 @@
-Feature: Search new project
+Feature: Search a land
 
   Scenario: Search land at Chocontá
     When "Esteban" is searching "choco" expecting "Chocontá" for a land

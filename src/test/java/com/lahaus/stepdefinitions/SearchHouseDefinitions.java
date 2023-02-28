@@ -28,7 +28,7 @@ public class SearchHouseDefinitions {
     @Then("it should be at least one house available with price greater than {int}")
     public void should_find_house_available(Integer value) {
         OnStage.theActorInTheSpotlight().attemptsTo(
-                WaitUntil.the(RESULT_LIST, isVisible()).forNoMoreThan(Duration.ofSeconds(30))
+                WaitUntil.the(RESULT_LIST, isVisible()).forNoMoreThan(Duration.ofSeconds(3))
         );
         String readValue = OnStage.theActorInTheSpotlight().asksFor(Text.of(RESULT_VALUE));
         Pattern p = Pattern.compile("\\d+");
