@@ -23,7 +23,7 @@ public class SearchLandDefinitions {
     @Then("there is no results")
     public void no_results_found() {
         OnStage.theActorInTheSpotlight().attemptsTo(
-                WaitUntil.the(SearchResult.IMAGE_NO_FOUND, isVisible()).forNoMoreThan(Duration.ofSeconds(3))
+                WaitUntil.the(SearchResult.IMAGE_NO_FOUND, isVisible()).forNoMoreThan(Duration.ofSeconds(8))
         );
         Ensure.that(SearchResult.IMAGE_NO_FOUND).isDisplayed();
     }

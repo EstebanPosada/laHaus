@@ -13,8 +13,9 @@ public class SearchPage {
     public static Target HEADER = Target.the("header for city selection").locatedBy("//div[@class=' ']");
     public static Target NEW_PROJECT = Target.the("new projects").locatedBy("//div[@data-city='medellin']/a[@data-lh-id='home-card-where-do-you-want-to-live-section-proyectos-de-vivienda']");
     public static Target CITY_FROM_LIST = Target.the("firs city from list").locatedBy("//li[@data-type='city']");
+    public static Target SEARCH_LIST = Target.the("firs city from list").locatedBy("//li[@data-type='city']/..");
     public static Target LAND_TYPE = Target.the("land type").locatedBy("//li[@data-value='lotes']");
     public static Target SORT_ACTION = Target.the("sort button").locatedBy("//span[@data-lh-id='srp-sorting-button']");
-    public static Target SORT_RB = Target.the("sort selection").locatedByFirstMatching("//li[@data-lh-id='srp-sorting-option']/p");
+    public static Target SORT_RB = Target.the("sort selection").locatedByFirstMatching("//li[@data-lh-id='srp-sorting-option']/p[contains(text(),'Mayor área')]");
 //    public static Target A = Target.the("").locatedBy("");
 }

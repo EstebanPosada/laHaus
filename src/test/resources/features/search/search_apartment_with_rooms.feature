@@ -1,4 +1,4 @@
-Feature: Search apartment
+Feature: Search apartment with rooms
 
   @Manual:passed
   Scenario: Search an apartment at Cartagena

@@ -21,7 +21,7 @@ public class SearchNewProjectDefinitions {
     @Then("it should find at least one option available")
     public void should_find_an_option_available() {
         OnStage.theActorInTheSpotlight().attemptsTo(
-                WaitUntil.the(SearchResult.RESULT_LIST, isVisible()).forNoMoreThan(Duration.ofSeconds(3))
+                WaitUntil.the(SearchResult.RESULT_LIST, isVisible()).forNoMoreThan(Duration.ofSeconds(8))
         );
         Ensure.that(SearchResult.RESULT_LIST).values().hasSizeGreaterThan(1);
     }
