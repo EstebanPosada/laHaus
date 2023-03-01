@@ -15,9 +15,9 @@ import java.time.Duration;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 public class SearchLandDefinitions {
-    @When("{actor} is searching {string} expecting {string} for a land")
-    public void search_new_project(Actor actor, String typing, String place) {
-        actor.attemptsTo(SearchLandTask.search(typing, place));
+    @When("{actor} is searching for a land at {string}")
+    public void search_new_project(Actor actor, String place) {
+        actor.attemptsTo(SearchLandTask.search(place));
     }
 
     @Then("there is no results")
